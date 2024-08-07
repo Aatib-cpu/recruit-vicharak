@@ -31,7 +31,7 @@ reg [7:0]IM[0:60];
 //Initializing Instruction Memory 
 initial
 begin                       //opcode rs2  rs1  rd   func 
-    {IM[02],IM[01],IM[00]} = 24'b000_0000_0000_0000_0000_00000; //ADD $0,$0,$0
+    {IM[02],IM[01],IM[00]} = 24'b000_0000_0000_0000_0000_00000; //ADD $0,$0,$0 NOP
 						    //opcode imm4 rs1  imm4 func    
     {IM[05],IM[04],IM[03]} = 24'b000_0010_0001_0011_0010_00000; //MUL $3,$1,$2
              				//opcode imm4 rs1  imm4 func	
